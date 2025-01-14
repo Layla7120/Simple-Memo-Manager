@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div>
+        <h1>📋 Simple Memo Manager</h1>
+        <p>A Spring-based web application that allows users to create, edit, and delete simple memos.</p>
+        <p>
+            <a href="/memo/new">📝 Write Memo</a>
+        </p>
+        <h3> 🗃️ Memo List </h3>
+        <table>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Content</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="memo : ${memo}">
+                <td th:text="${memo.id}"></td>
+                <td th:text="${member.title}"></td>
+                <td th:text="${member.content}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div> <!-- /container -->
+</body>
+</html>
