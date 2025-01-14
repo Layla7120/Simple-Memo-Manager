@@ -21,7 +21,7 @@ public class JpaMemoRepository implements MemoRepository {
     }
 
     @Override
-    public Optional<Memo> findById(int id) {
+    public Optional<Memo> findById(Long id) {
         Memo memo = em.find(Memo.class, id);
         return Optional.ofNullable(memo);
     }

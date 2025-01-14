@@ -37,5 +37,7 @@ public class MemoService {
         return memoRepository.findByTitle(title);
     }
 
-
+    public Optional<Memo> findMemoById(Long id) {
+        return memoRepository.findById(id);
+    }
 }

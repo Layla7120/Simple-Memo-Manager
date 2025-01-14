@@ -9,7 +9,7 @@ public interface MemoRepository {
 
     Memo save(Memo memo);
 
-    Optional<Memo> findById(int id);
+    Optional<Memo> findById(Long id);
     Optional<Memo> findByTitle(String title);
     List<Memo> findAll();
 
