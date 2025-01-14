@@ -34,7 +34,7 @@ View Memo List
 - [x] Displays a list of memos with their titles and creation dates.
 
 Add Memo
-- [ ] Allows users to input a title and content to create a new memo.
+- [x] Allows users to input a title and content to create a new memo.
 
 Edit Memo
 - [ ] Enables users to modify the title and content of an existing memo.
