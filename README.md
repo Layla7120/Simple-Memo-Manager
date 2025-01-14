@@ -12,7 +12,7 @@ The project content and specifications were set through ChatGPT.
 
 ---
 
-Description: A Spring-based web application that allows users to create, edit, and delete simple memos.
+Description: A Spring-based web application that allows users to create view simple memos.
 
 ## 🔌 Tech Stack
 
