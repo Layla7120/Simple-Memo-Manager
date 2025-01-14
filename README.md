@@ -31,7 +31,7 @@ Java Version: 21
 ## 👾 Feature Specifications
 
 View Memo List
-- [ ] Displays a list of memos with their titles and creation dates.
+- [x] Displays a list of memos with their titles and creation dates.
 
 Add Memo
 - [ ] Allows users to input a title and content to create a new memo.

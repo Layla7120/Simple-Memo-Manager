@@ -1,7 +1,16 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+<style>
+    table, th, td {
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 10px;
+    }
+</style>
 <body>
-<div class="container">
+<div class="container" style="padding: 10px;">
     <div>
         <h1>📋 Simple Memo Manager</h1>
         <p>A Spring-based web application that allows users to create, edit, and delete simple memos.</p>
@@ -18,10 +27,10 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="memo : ${memo}">
+            <tr th:each="memo : ${memos}">
                 <td th:text="${memo.id}"></td>
-                <td th:text="${member.title}"></td>
-                <td th:text="${member.content}"></td>
+                <td th:text="${memo.title}"></td>
+                <td th:text="${memo.content}"></td>
             </tr>
             </tbody>
         </table>

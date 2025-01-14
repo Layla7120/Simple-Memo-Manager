@@ -20,7 +20,8 @@ public class HomeController {
     @GetMapping("/")
     public String home(Model model) {
         List<Memo> allMemo = memoService.findAllMemo();
-        model.addAttribute(allMemo);
+        System.out.println(allMemo);
+        model.addAttribute("memos", allMemo);
         return "home";
     }
 }
